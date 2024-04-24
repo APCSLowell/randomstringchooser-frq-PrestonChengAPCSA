@@ -7,14 +7,12 @@ public class RandomStringChooser
     for(int i = 0; i < wordArray.length; i++){
       words.add(wordArray[i]);
     }
+  }
 
   public String getNext(){
     if(words.size() == 0){
       return "NONE";
     }
-    int
-    
-  }
     int i = (int)(Math.random() * words.size());
     return words.remove(i);
   }
